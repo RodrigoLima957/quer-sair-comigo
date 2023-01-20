@@ -8,6 +8,7 @@ html, body, h1
 
 body{
     font-family: 'Aboreto', cursive;
+    box-sizing: border-box;
     overflow: hidden;
     background-image: url(fundoRomantico.jpg);
     background-repeat: no-repeat;
@@ -44,7 +45,7 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70vw;
+    width: 100vw;
     height: 100vh;
     gap: 30px;
 }
@@ -76,6 +77,20 @@ button:hover {
 button:active {
     transform: translateY(-1px);
 }
+
+#botao {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* #botao2 {
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+} */
 
 /* animação coração */
 
@@ -115,9 +130,3 @@ button:active {
     0% {transform: scale(0.9) rotate(-135deg);}
     100% {transform: scale(1.1) rotate(-135deg);}
 }
-
-
-
-
-
-

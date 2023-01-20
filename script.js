@@ -27,8 +27,11 @@ function move(el){
 }
 
 botaoSim .addEventListener('click', function(){
+    document.getElementById("btn-sim").classList.remove("move");
+
     setHeart(this);
     adicionaDiv()
+    
 });
 
 function setHeart(element){
